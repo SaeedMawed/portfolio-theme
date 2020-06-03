@@ -4,15 +4,60 @@
 
 /*Faded swiper*/
 
+.top-img-container {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: calc(100vh - 110px);
+    min-height: 400px;
+    background: url(/images/OT1C850.jpg);
+    background-size: cover;
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0.5;
+        background-color: #c4dadb;
+    }
+    .top-img-container-caption {
+        position: absolute;
+        margin: 20px;
+        padding: 50px;
+        width: 100%;
+        max-width: 500px;
+        h2,
+        h4 {
+            color: gold;
+            text-shadow: 0 2px 1px #fff, 0 -3px 4px #fff;
+            text-align: center;
+            font-weight: bold;
+        }
+        b {
+            line-height: 2;
+            text-align: center;
+            font-size: 17px;
+        }
+        .contact-us {
+            margin: 25px auto;
+            padding: 8px 20px;
+            border-radius: 30px;
+            border: 1px solid #fff;
+            color: #000;
+        }
+    }
+}
+
+$head-with-border-bg: linear-gradient(to right, #232526, #414345);
 .head-with-border {
     position: relative;
     z-index: 2;
     h2 {
         text-align: center;
-        background: linear-gradient(to right, #a62a2a, #dc3545);
+        //background: linear-gradient(to right, #a62a2a, #dc3545);
+        background: $head-with-border-bg;
         color: #fff;
         margin: 30px auto 15px auto;
-        border-radius: 45px;
+        border-radius: 5px;
         width: 250px;
         padding: 10px 15px;
         font-size: 1.5rem !important;
@@ -20,7 +65,8 @@
             content: "";
             width: 100%;
             height: 1px;
-            background-color: #a62a2a;
+            //background-color: #a62a2a;
+            background: $head-with-border-bg;
             position: absolute;
             left: 0;
             top: 50%;
@@ -61,14 +107,14 @@
         .slide-content {
             background-position: center;
             background-size: cover;
+            background-color: #f1f1f1;
             img {
-                width: 100%;
+                width: 50%;
                 height: 350px;
                 max-height: 350px;
             }
             .caption {
-                display: none;
-                background-color: #f1f1f1;
+                //display: none;
                 padding: 50px;
                 position: absolute;
                 left: 60%;
