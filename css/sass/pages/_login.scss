@@ -1,0 +1,46 @@
+html {
+    max-height: 1000px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../../images/background.jpg');
+    background-size: cover;
+    display: table;
+    .login-inverse {
+        display: flex;
+        flex-wrap: wrap;
+        @media screen and (max-width: 1200px) {
+            display: block;
+            flex-wrap: nowrap;
+            max-height: 100vh;
+        }
+        .left-side {
+            min-height: 100%;
+            max-width: 450px;
+            width: 100%;
+            @media screen and (max-width: 1200px) {
+                min-height: 0px;
+                width: 100%;
+                max-width: 100%;
+                height: 220px !important;
+            }
+        }
+        .main-login {
+            padding: 3rem;
+            max-width: calc(100% - 450px);
+            width: 100%;
+            background-color: white;
+            height: 100vh;
+            @media screen and (max-width: 1200px) {
+                width: 100%;
+                max-width: 100%;
+                min-height: 350px;
+                height: calc(100vh - 220px) !important;
+            }
+        }
+    }
+}
