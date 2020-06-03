@@ -1,4 +1,4 @@
-@import url(../../node_modules/swiper/css/swiper.min.css);
+@import url(../sass/swiper.min.css);
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -8306,7 +8306,7 @@ body {
   width: 100%;
   height: calc(100vh - 110px);
   min-height: 400px;
-  background: url(/images/OT1C850.jpg);
+  background: url(/images/OT1C6E0.jpg);
   background-size: cover; }
   .top-img-container .overlay {
     width: 100%;
