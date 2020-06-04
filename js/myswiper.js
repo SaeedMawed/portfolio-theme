@@ -36,6 +36,12 @@ var swiper = new Swiper(".swiper-container", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    /*
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        */
 });
 
 var swiper1 = new Swiper(".swiper-cube", {
@@ -52,7 +58,6 @@ var swiper1 = new Swiper(".swiper-cube", {
         el: ".swiper-pagination",
         clickable: true,
     },
-
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
