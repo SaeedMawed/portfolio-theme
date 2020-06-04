@@ -2,8 +2,7 @@
 .my-header-inverse {
     position: relative;
     width: 100%;
-    min-height: 70px;
-    max-height: 110px;
+    min-height: 110px;
     z-index: 1000;
     background-color: #f1f1f1;
     .header-lg {
@@ -76,8 +75,11 @@
 
 .header-sm {
     height: 70px !important;
+    box-shadow: 0 1px 5px #fff;
+    background: linear-gradient(to right, #232526, #414345) !important;
     .navbar {
         padding: 0 1rem !important;
+        background: linear-gradient(to right, #232526, #414345) !important;
     }
     .nav-item {
         list-style: none !important;
