@@ -8408,12 +8408,20 @@ body {
   width: 100%;
   height: 400px;
   position: relative !important; }
+  @media only screen and (max-width: 480px) {
+    .who-us .swiper-container {
+      height: 500px;
+      max-height: 500px; } }
   .who-us .swiper-container .col-sm-6 {
     width: 50%; }
   .who-us .swiper-container .swiper-wrapper {
     height: 350px;
     width: 100%;
     margin-bottom: 20px; }
+    @media only screen and (max-width: 480px) {
+      .who-us .swiper-container .swiper-wrapper {
+        height: 450px;
+        max-height: 450px; } }
   .who-us .swiper-container .swiper-slide {
     margin: 0 25px !important;
     background-position: center;
@@ -8422,6 +8430,9 @@ body {
     position: absolute;
     top: 175px !important;
     color: #35636a !important; }
+    @media only screen and (max-width: 480px) {
+      .who-us .swiper-container .swiper-button-white {
+        top: 225px !important; } }
   .who-us .swiper-container .slide-content {
     background-position: center;
     background-size: cover;
@@ -8430,6 +8441,10 @@ body {
       width: 100%;
       height: 350px;
       max-height: 350px; }
+      @media only screen and (max-width: 480px) {
+        .who-us .swiper-container .slide-content img {
+          height: 450px;
+          max-height: 450px; } }
     .who-us .swiper-container .slide-content .caption {
       width: 100%;
       z-index: 1000; }
@@ -8440,9 +8455,13 @@ body {
         color: #35636a;
         text-shadow: 0 5px 10px #a62a2a, 0 -5px 10px red; }
       .who-us .swiper-container .slide-content .caption .text {
-        padding: 5px; }
+        padding: 10px; }
       .who-us .swiper-container .slide-content .caption .btn {
-        border-radius: 50px; }
+        border-radius: 50px;
+        padding: 10px; }
+        @media only screen and (min-width: 768px) {
+          .who-us .swiper-container .slide-content .caption .btn {
+            margin: 5px 0 0 0.5rem; } }
         @media only screen and (max-width: 768px) {
           .who-us .swiper-container .slide-content .caption .btn {
             margin-top: 5px; } }
