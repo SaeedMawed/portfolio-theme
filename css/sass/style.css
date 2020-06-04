@@ -432,9 +432,9 @@ a {
     line-height: 75px;
     margin: 0;
     padding: 0px 50px;
-    box-shadow: 0 2px 8px #fff, 0 -3px 8px #35636a;
+    box-shadow: 0 2px 5px #fff, 0 -2px 5px #fff;
     color: #000 !important;
-    text-shadow: 0 3px 8px red, 0 -3px 8px #a62a2a !important;
+    text-shadow: 0 3px 8px #f9f4f4, 0 -3px 8px white !important;
     font-size: larger !important;
     font-weight: bolder !important; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
