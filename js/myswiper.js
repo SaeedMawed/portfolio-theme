@@ -22,12 +22,14 @@ var swiper_3d = new Swiper(".swiper-3d", {
 });
 
 var swiper = new Swiper(".swiper-container", {
+    slidesPerView: 1,
     spaceBetween: 30,
-    effect: "fade",
+    //effect: "fade",
     loop: true,
-    fadeEffect: {
-        crossFade: true,
-    },
+    /*fadeEffect: {
+            crossFade: true,
+        },
+        */
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
