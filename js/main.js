@@ -1,4 +1,5 @@
 var audio = document.getElementById('my_audio');
+audio.play();
 audio.volume = 0.2;
 audio.loop = false;
 

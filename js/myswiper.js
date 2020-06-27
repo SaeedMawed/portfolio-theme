@@ -40,7 +40,7 @@ var swiper = new Swiper(".swiper-container", {
     },
 
     autoplay: {
-        delay: 350000,
+        delay: 5000,
         disableOnInteraction: false,
     },
 });
