@@ -20,23 +20,21 @@
     }
     .top-img-container-caption {
         position: absolute;
-        margin: 20px;
-        padding: 50px;
-        width: 50%;
+        margin: 20px auto;
+        padding: 1rem;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @media only screen and (max-width: 1000px) {
-            padding: 35px;
+            padding: 25px;
         }
         @media only screen and (max-width: 768px) {
             width: 100%;
         }
-        @media only screen and (max-width: 480px) {
-            padding: 20px !important;
-            margin: 20px 5px;
-            text-align: center;
-            overflow: hidden;
-        }
-        h2,
-        h4 {
+        h1,
+        h3 {
             color: gold;
             text-shadow: 0 2px 1px #fff, 0 -3px 4px #fff;
             text-align: center;
@@ -45,7 +43,10 @@
         b {
             line-height: 2;
             text-align: center;
-            font-size: 17px;
+            font-size: 1rem;
+            @media only screen and (max-width: 768px) {
+                font-size: 14px;
+            }
         }
         .contact-us {
             margin: 25px auto;
@@ -61,7 +62,8 @@ $head-with-border-bg: linear-gradient(to right, #232526, #414345);
 .head-with-border {
     position: relative;
     z-index: 2;
-    h2 {
+    h2,
+    h1 {
         text-align: center;
         //background: linear-gradient(to right, #a62a2a, #dc3545);
         background: $head-with-border-bg;
@@ -70,7 +72,6 @@ $head-with-border-bg: linear-gradient(to right, #232526, #414345);
         border-radius: 5px;
         width: 250px;
         padding: 10px 15px;
-        font-size: 1.5rem !important;
         &:before {
             content: "";
             width: 100%;
@@ -89,7 +90,7 @@ $head-with-border-bg: linear-gradient(to right, #232526, #414345);
 .why-us {
     .who-us-body {
         padding: 5px 40px;
-        line-height: 3;
+        line-height: 2;
     }
 }
 
@@ -149,8 +150,8 @@ $head-with-border-bg: linear-gradient(to right, #232526, #414345);
                 max-height: 350px;
                 z-index: 1000;
                 .caption-title {
+                    padding-top: 1rem;
                     color: #35636a;
-                    text-shadow: 0 5px 10px #a62a2a, 0 -5px 10px red;
                 }
                 .text {
                     padding: 10px;
@@ -206,14 +207,21 @@ $head-with-border-bg: linear-gradient(to right, #232526, #414345);
     }
     .cube-container {
         position: relative;
+        margin: 3rem 0 !important;
     }
     .why-us-text {
         line-height: 2;
         padding: 10px 3rem !important;
+        @media only screen and (max-width: 768px) {
+            padding: 1rem !important;
+        }
         .btn {
             width: 150px;
             border-radius: 50px;
             margin: 40px auto;
+            @media only screen and (max-width: 768px) {
+                margin: 1.5rem auto 0 auto !important;
+            }
         }
     }
 }

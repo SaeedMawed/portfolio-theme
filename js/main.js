@@ -1,3 +1,8 @@
+var audio = document.getElementById('my_audio');
+audio.volume = 0.2;
+audio.loop = false;
+
+
 var direction = document.getElementsByTagName("BODY")[0].getAttribute("dir");
 
 function openDashboard() {
