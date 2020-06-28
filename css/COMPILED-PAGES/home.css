@@ -8611,7 +8611,6 @@ body {
       display: block; }
 
 .services {
-  background-image: url("/images/service-backgroung.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
