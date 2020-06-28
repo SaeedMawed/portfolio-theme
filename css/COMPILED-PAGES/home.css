@@ -7966,9 +7966,6 @@ a.text-white:hover, a.text-white:focus {
           font-size: 15px !important; }
         .my-header-inverse .header-lg .my-header-top .info-navbar .social-btn-list {
           margin: 0 1rem; }
-          @media only screen and (max-width: 1050px) {
-            .my-header-inverse .header-lg .my-header-top .info-navbar .social-btn-list {
-              display: none !important; } }
     .my-header-inverse .header-lg .my-header-bottom {
       height: 70px;
       width: 100%; }
