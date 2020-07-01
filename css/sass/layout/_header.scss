@@ -59,11 +59,14 @@
 
 .header-sm {
   height: 70px !important;
-  box-shadow: 0 1px 5px #fff;
   background: linear-gradient(to right, #232526, #414345) !important;
   .navbar {
     padding: 0 1rem !important;
     background: linear-gradient(to right, #232526, #414345) !important;
+    box-shadow: 0 1px 5px #fff;
+    .navbar-toggler {
+      border-color: #f1f1f1;
+    }
   }
   .nav-item {
     list-style: none !important;
