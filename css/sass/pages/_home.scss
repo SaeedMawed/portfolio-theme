@@ -187,6 +187,7 @@ $head-with-border-bg: linear-gradient(to right, #232526, #414345);
     width: 350px;
     height: 350px;
     margin: 2rem auto;
+    position: relative;
     @media only screen and (min-width: 1000px) {
       margin: 4rem auto;
     }
@@ -212,9 +213,10 @@ $head-with-border-bg: linear-gradient(to right, #232526, #414345);
   }
   .swiper-slide {
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    box-shadow: 0 1px 10px;
   }
   .cube-container {
     position: relative;
@@ -336,8 +338,6 @@ $head-with-border-bg: linear-gradient(to right, #232526, #414345);
         width: 250px;
         height: 300px;
       }
-    }
-    .swiper-slide-active {
     }
     .swiper-pagination-bullets {
       left: -25px !important;

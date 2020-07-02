@@ -8167,6 +8167,21 @@ h5 {
     height: 70px;
     margin: 0 1rem; }
 
+.fa-youtube:hover {
+  color: #ff0000 !important; }
+
+.fa-facebook:hover {
+  color: #0f90f3 !important; }
+
+.fa-github:hover {
+  color: #000 !important; }
+
+.fa-linkedin:hover {
+  color: #0077b5 !important; }
+
+.fa-instagram:hover {
+  color: #a62a2a !important; }
+
 .clearfix {
   clear: both !important; }
 
@@ -8576,7 +8591,8 @@ body {
   .why-us .swiper-cube {
     width: 350px;
     height: 350px;
-    margin: 2rem auto; }
+    margin: 2rem auto;
+    position: relative; }
     @media only screen and (min-width: 1000px) {
       .why-us .swiper-cube {
         margin: 4rem auto; } }
@@ -8598,9 +8614,10 @@ body {
       margin-top: 5px; }
   .why-us .swiper-slide {
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 100%; }
+    width: 100%;
+    box-shadow: 0 1px 10px; }
   .why-us .cube-container {
     position: relative;
     margin: 3rem 0 !important; }
