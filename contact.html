@@ -43,12 +43,12 @@
                 <div class="my-header-bottom d-flex justify-content-between"id="my-header-bottom">
                     <div class="d-flex justify-content-start">
                         <div class="logo">
-                            <img src="images/logo.png" alt="my logo"  style="cursor: pointer;" onclick="window.location.href ='https://saeedmawed.github.io/portfolio-theme/home.html'">
+                            <img src="images/logo.png" alt="my logo" onclick ="window.location.href = 'https://saeedmawed.github.io/portfolio-theme/home.html' ">
                         </div>
                         <ul class="d-flex">
-                            <li class="my-bottom-item"onclick="play()"><a class="btn" href="home.html">Home</a></li>
-                            <li class="my-bottom-item d-none"><a class="btn"  href="contact.html">Contact</a></li>
-                            <li class="my-bottom-item"><a  class="btn" href="about.html">About</a></li>
+                            <li class="my-bottom-item" onclick="play()" ><a class="btn" href="/home.html">Home</a></li>
+                            <li class="my-bottom-item""><a class="btn"  href="/contact.html">Contact</a></li>
+                            <li class="my-bottom-item"><a  class="btn" href="/about.html">About</a></li>
                         </ul>
                     </div>
                     <ul class="justify-content-end d-flex px-2 mx-3">
@@ -67,13 +67,20 @@
                     </form>
                 </div>
             </div>
+            <div class="header-sm xs-visible fixed-top bg-dark d-none">
+                <ul class="">
+                    <li>
+                        <a href="#"class="logo"><img src="images/logo.png"></a>
+                    </li>
+                </ul>
+            </div>
     </section>
     <!-- Small Header -->
     <section>
         <div class="header-sm visible-xs position-relative"id="header-sm">
             <nav class="navbar navbar-expand-md navbar-light fixed-top">
                 <li class="nav-item">
-                    <a href="home.html"class="logo navbar-brand"><img src="images/logo.png"></a>
+                    <a href="#"class="logo navbar-brand"><img src="images/logo.png"></a>
                 </li>
                 <button class="navbar-toggler"type="button"data-toggle="collapse"
                         data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"
@@ -83,13 +90,20 @@
                 <div class="collapse navbar-collapse"id="navbarSupportedContent">
                     <ul class="navbar-nav mb-3">
                         <li class="nav-item">
-                            <a href="home.html" class="btn">Home</a>
-                        </li>
-                        <li class="nav-item d-none">
-                            <a href="contact.html" class="btn">Contact</a>
+                            <form action="#">
+                                <input class="btn"type="submit"id="home"value="Home"/>
+                            </form>
                         </li>
                         <li class="nav-item">
-                            <a href="about.html" class="btn">About</a>
+                            <form action="#">
+                                <input class="btn"type="submit"id="contact"
+                                    value="Contact us"/>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <form action="#">
+                                <input class="btn"type="submit"id="about"value="About"/>
+                            </form>
                         </li>
                         <li class="nav-item">
                             <form action="#">
@@ -102,6 +116,7 @@
                                     value="Register"/>
                             </form>
                         </li>
+
                     </ul>
                 </div>
             </nav>

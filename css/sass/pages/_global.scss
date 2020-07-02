@@ -1,66 +1,64 @@
 html,
 body {
-    margin: 0px !important;
-    padding: 0px !important;
-    background-color: #f1f1f1;
-    overflow-x: hidden;
-    font-size: 1rem;
-    @media only screen and (max-width: 768px) {
-        font-size: 14px;
-    }
+  margin: 0px !important;
+  padding: 0px !important;
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  font-size: 1rem;
+  transition: $transation;
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .my-page {
-    min-height: 1500px;
-    position: relative;
-    //padding: 10px;
+  position: relative;
 }
 
 .container {
-    @media only screen and (max-width: 1000px) {
-        padding: 0px !important;
-    }
+  @media only screen and (max-width: 1000px) {
+    padding: 0px !important;
+  }
 }
 
 .visible-xs {
-    display: none;
-    @media screen and (max-width: 768px) {
-        display: block;
-    }
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 }
 
 .row {
-    margin: 0 !important;
-    padding: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .col-xs-6 {
-    width: 50% !important;
+  width: 50% !important;
 }
 
 @media screen and (max-width: 580px) {
-    .col-xs-12 {
-        width: 100% !important;
-    }
+  .col-xs-12 {
+    width: 100% !important;
+  }
 }
 
 .hidden {
-    opacity: 0;
+  opacity: 0;
 }
-
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 
 @media screen and (max-width: 768px) {
-    html,
-    body {
-        min-width: 320px;
-        overflow-x: hidden;
-    }
-    // same as hidden on sm , with this code we can hidden any block we want
-    .must-hidden {
-        display: none !important;
-        height: 0px !important;
-        width: 0px !important;
-    }
+  html,
+  body {
+    min-width: 320px;
+    overflow-x: hidden;
+  }
+  // same as hidden on sm , with this code we can hidden any block we want
+  .must-hidden {
+    display: none !important;
+    height: 0px !important;
+    width: 0px !important;
+  }
 }
