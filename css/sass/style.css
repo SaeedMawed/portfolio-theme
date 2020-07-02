@@ -26,8 +26,6 @@
   100% {
     background-color: #6aaaa6; } }
 .active {
-  background: linear-gradient(to left, #6a2b31, #dc3545);
-  color: #f8f9fa !important;
   transition: all 0.5s !important; }
 
 .my-header-inverse {
@@ -70,6 +68,11 @@
           border-radius: 5px; }
           .my-header-inverse .header-lg .my-header-bottom ul .my-bottom-item:hover a {
             color: #252525; }
+      .my-header-inverse .header-lg .my-header-bottom ul .my-bottom-item.active {
+        background-color: #f5f5f5;
+        border-radius: 5px; }
+        .my-header-inverse .header-lg .my-header-bottom ul .my-bottom-item.active a {
+          color: #252525; }
 
 .header-sm {
   height: 70px !important;

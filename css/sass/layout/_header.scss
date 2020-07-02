@@ -52,6 +52,13 @@
             }
           }
         }
+        .my-bottom-item.active {
+          background-color: #f5f5f5;
+          border-radius: 5px;
+          a {
+            color: #252525;
+          }
+        }
       }
     }
   }
