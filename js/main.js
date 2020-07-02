@@ -17,3 +17,9 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 /* End scroll up-down controller */
+
+/* Start preloader */
+$(window).on("load", function () {
+  $(".loader-container").fadeOut(1000);
+});
+/* End preloader */
