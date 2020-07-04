@@ -293,10 +293,12 @@ $head-with-border-bg: linear-gradient(to right, #232526, #414345);
 }
 
 .our-clients {
+  background: linear-gradient(to bottom, #ccc, #ccc, #f1f1f1);
   .client-box {
     position: relative;
     min-height: 330px;
     box-shadow: 0 2px 8px;
+    background: #fff;
     .client-img {
       max-width: 100%;
       width: auto;
@@ -380,9 +382,11 @@ $head-with-border-bg: linear-gradient(to right, #232526, #414345);
   );
   .work-box {
     position: relative;
-    padding: 5px;
+    margin: 1rem;
+    padding: 0.1rem;
+    z-index: 1;
     &:hover {
-      margin-top: -8px;
+      margin-top: -5px;
     }
     .work-img {
       max-width: 100%;
@@ -399,6 +403,30 @@ $head-with-border-bg: linear-gradient(to right, #232526, #414345);
       color: $primary-color;
       text-decoration: none;
     }
+  }
+  .work-box:before {
+    position: absolute;
+    content: " ";
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    z-index: -1;
+  }
+  .work-box:after {
+    position: absolute;
+    content: " ";
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    z-index: -2;
+    filter: blur(10px);
+  }
+
+  .work-box::before,
+  .work-box::after {
+    background: linear-gradient(235deg, #89ff00, #121212, #00bcd4);
   }
 }
 

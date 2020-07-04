@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- my Styles -->
+
+    <link rel="stylesheet" href="css/COMPILED-PAGES/login.css" />
+
+    <!--
+    <audio src="audio/doset-dashtam.mp3" id="my_audio" loop="false" autoplay></audio>
+    -->
+    <title>Design Theme - Home</title>
+  </head>
+
+  <body dir="ltr">
+    <div class="login-container">
+      <!-- You only need this form and the form-login.css -->
+      <form class="form-login" th:action="@{/login}" th:method="post">
+        <div class="form-log-in-with-email">
+          <div class="form-white-background">
+            <div class="form-title-row">
+              <h1>Log in</h1>
+            </div>
+            <div
+              class="alert alert-danger mb-3 d-none"
+              th:if="${param.error}"
+              th:text="${errorMessage}"
+            >
+              <h3></h3>
+            </div>
+
+            <div class="alert alert-info mb-3 d-none" th:if="${notActive}">
+              <p class="text">
+                Uesr with this email not active , please active your account.
+              </p>
+            </div>
+            <div class="form-input mt-5">
+              <div class="form-row">
+                <label>
+                  <input type="email" name="username" placeholder="Username" />
+                </label>
+              </div>
+              <div class="form-row">
+                <label>
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                  />
+                </label>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <button type="submit">Log in</button>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between m-3">
+            <a
+              href="#"
+              class="form-forgotten-password justify-content-start ml-5"
+              >Forgotten password &middot;</a
+            >
+            <a href="#" class="form-create-an-account justify-content-end mr-5"
+              >Create an account &rarr;</a
+            >
+          </div>
+        </div>
+
+        <div class="form-sign-in-with-social">
+          <div class="form-row form-title-row">
+            <span class="form-title">Sign in with</span>
+          </div>
+          <div class="form-sign-in-with-social-btns">
+            <a href="#" class="btn form-google-button">Google</a>
+            <a href="#" class="btn form-facebook-button">Facebook</a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/fontawesome.all.min.js"></script>
+  </body>
+</html>
