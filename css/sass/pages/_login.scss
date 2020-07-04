@@ -4,146 +4,172 @@
   min-height: 100vh;
   background-image: url("/images/service-backgroung.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  //background-attachment: fixed;
   background-position: center;
   position: relative;
-}
-.form-login {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  font: bold 14px sans-serif;
-  text-align: center;
-  @media only screen and (max-width: 480px) {
-    display: block;
-  }
-  .form-row {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  .form-title-row {
+  .go-back {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 1px solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
-    h1 {
-      border-bottom: 2px solid #6caee0;
-      padding: 0.35rem 1.35rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+    @media only screen and (max-width: 768px) {
+      top: auto;
+      bottom: 30px;
     }
-  }
-  .form-log-in-with-email {
-    position: relative;
-    margin: 1rem;
-    @media only screen and (max-width: 480px) {
-      margin: 0;
-      padding: 2rem 2rem 1rem 2rem;
-    }
-    .form-white-background {
-      position: relative;
-      padding: 2rem 3rem;
-      background-color: #fff;
-      @media only screen and (max-width: 480px) {
-        min-height: auto;
-      }
-
-      .form-row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        line-height: 1.75rem;
-        label {
-          width: 100%;
-          input {
-            border: none;
-            border-bottom: 2px solid #eee;
-            min-width: 350px;
-            padding: 0.5rem;
-            @media only screen and (max-width: 480px) {
-              min-width: 100%;
-            }
-            &::placeholder {
-              color: #121212;
-            }
-          }
-        }
-        button {
-          width: 125px;
-          background-color: #6caee0;
-          color: #fff;
-          font-weight: bold;
-          line-height: 2.5rem;
-          margin-top: 3rem;
-          //position: absolute;
-          //bottom: 2rem;
-          border: none;
-          @media only screen and (max-width: 480px) {
-            position: relative;
-            bottom: auto;
-            margin: 1rem;
-          }
-          &:hover {
-            cursor: pointer;
-            opacity: 0.7;
-            color: #000;
-          }
-        }
-      }
-    }
-    .form-forgotten-password,
-    .form-create-an-account {
-      font-weight: bold;
-      font-size: 16px;
-      padding: 0.5rem;
+    .fa-long-arrow-alt-left {
       color: #fff;
-      &:hover {
-        opacity: 0.5;
-      }
+      font-size: 22px;
+      font-weight: bold;
     }
-    .form-create-an-account {
-      background-color: #6caee0;
-      color: 000;
-      opacity: 0.7;
-      &:hover {
-        opacity: 0.3;
-        color: #000;
-      }
+    &:hover {
+      opacity: 0.5;
     }
   }
-  .form-sign-in-with-social {
-    position: relative;
-    padding: 1rem;
-    margin: 2rem;
-    @media only screen and (max-width: 480px) {
-      margin: 0 2rem !important;
+  .form-login {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font: bold 14px sans-serif;
+    text-align: center;
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+    .form-row {
+      margin: 0 !important;
       padding: 0 !important;
     }
-    text-align: center;
     .form-title-row {
-      color: #fff;
-      font-weight: bold;
-      padding: 0.5rem 1rem !important;
-      border-bottom: 2px solid;
-      font-size: 1.5rem;
-      margin-bottom: 1.25rem !important;
-    }
-    .btn {
-      color: #fff;
-      display: block;
-      width: 145px;
-      border-radius: 2px;
-      margin: 8px auto;
-      &:hover {
-        opacity: 0.5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      h1 {
+        border-bottom: 2px solid #6caee0;
+        padding: 0.35rem 1.35rem;
       }
     }
-    .form-google-button {
-      background-color: rgba(222, 110, 60, 0.9);
+    .form-log-in-with-email {
+      position: relative;
+      margin: 1rem;
+      @media only screen and (max-width: 768px) {
+        margin: 0;
+        padding: 2rem 2rem 1rem 2rem;
+      }
+      .form-white-background {
+        position: relative;
+        padding: 2rem 3rem;
+        background-color: #fff;
+        @media only screen and (max-width: 768px) {
+          min-height: auto;
+        }
+
+        .form-row {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          line-height: 1.75rem;
+          label {
+            width: 100%;
+            input {
+              border: none;
+              border-bottom: 2px solid #eee;
+              min-width: 350px;
+              padding: 0.5rem;
+              @media only screen and (max-width: 768px) {
+                min-width: 100%;
+              }
+              &::placeholder {
+                color: #121212;
+              }
+            }
+          }
+          button {
+            width: 125px;
+            background-color: #6caee0;
+            color: #fff;
+            font-weight: bold;
+            line-height: 2.5rem;
+            margin-top: 3rem;
+            //position: absolute;
+            //bottom: 2rem;
+            border: none;
+            @media only screen and (max-width: 768px) {
+              position: relative;
+              bottom: auto;
+              margin: 1rem;
+            }
+            &:hover {
+              cursor: pointer;
+              opacity: 0.7;
+              color: #000;
+            }
+          }
+        }
+      }
+      .form-forgotten-password,
+      .form-create-an-account {
+        font-weight: bold;
+        font-size: 16px;
+        padding: 0.5rem;
+        color: #fff;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+      .form-create-an-account {
+        background-color: #6caee0;
+        color: 000;
+        opacity: 0.7;
+        &:hover {
+          opacity: 0.3;
+          color: #000;
+        }
+      }
     }
-    .form-facebook-button {
-      background-color: rgba(75, 136, 194, 0.9);
+    .form-sign-in-with-social {
+      position: relative;
+      padding: 1rem;
+      margin: 2rem;
+      @media only screen and (max-width: 768px) {
+        margin: 0 2rem !important;
+        padding: 0 !important;
+      }
+      text-align: center;
+      .form-title-row {
+        color: #fff;
+        font-weight: bold;
+        padding: 0.5rem 1rem !important;
+        border-bottom: 2px solid;
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem !important;
+      }
+      .btn {
+        color: #fff;
+        display: block;
+        width: 145px;
+        border-radius: 2px;
+        margin: 8px auto;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+      .form-google-button {
+        background-color: rgba(222, 110, 60, 0.9);
+      }
+      .form-facebook-button {
+        background-color: rgba(75, 136, 194, 0.9);
+      }
     }
   }
 }

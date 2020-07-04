@@ -20,6 +20,15 @@
 
   <body dir="ltr">
     <div class="login-container">
+      <div
+        class="go-back"
+        action="action"
+        onclick="window.history.go(-1); return false;"
+        type="submit"
+        value="Cancel"
+      >
+        <i class="fas fa-long-arrow-alt-left"></i>
+      </div>
       <!-- You only need this form and the form-login.css -->
       <form class="form-login" th:action="@{/login}" th:method="post">
         <div class="form-log-in-with-email">
