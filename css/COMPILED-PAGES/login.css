@@ -8479,7 +8479,7 @@ body {
   background-position: center;
   position: relative; }
   .login-container .go-back {
-    position: absolute;
+    position: fixed;
     top: 30px;
     left: 30px;
     border: 1px solid #fff;
@@ -8493,8 +8493,7 @@ body {
     z-index: 100; }
     @media only screen and (max-width: 768px) {
       .login-container .go-back {
-        top: auto;
-        bottom: 30px; } }
+        top: calc(100vh - 75px) !important; } }
     .login-container .go-back .fa-long-arrow-alt-left {
       color: #fff;
       font-size: 22px;
