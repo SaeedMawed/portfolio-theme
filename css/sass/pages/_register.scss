@@ -1,0 +1,78 @@
+.register-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  .register-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+    width: 100%;
+  }
+  .register_container {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4.5rem auto;
+    background: #fff;
+    padding: 2rem;
+    opacity: 0.95;
+    @media only screen and (max-width: 768px) {
+      width: auto;
+      margin: 5em;
+    }
+    @media only screen and (max-width: 480px) {
+      margin: 5em 2em;
+    }
+    label {
+      width: 100%;
+    }
+    input {
+      width: 100%;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      padding: 0.75rem;
+      margin-bottom: 0.5rem;
+      @media only screen and (max-width: 768px) {
+        min-width: 100%;
+      }
+      &::placeholder {
+        color: #121212;
+      }
+    }
+    .btns-group {
+      margin-top: 2rem !important;
+      position: relative;
+      button {
+        width: 50%;
+        background-color: #6caee0;
+        color: #fff;
+        font-weight: bold;
+        line-height: 2.5rem;
+        border: none;
+        @media only screen and (max-width: 768px) {
+          position: relative;
+          bottom: auto;
+          margin: 1rem;
+        }
+        &:hover {
+          cursor: pointer;
+          opacity: 0.7;
+          color: #000;
+        }
+      }
+      .submitbtn {
+        background-color: $primary-color;
+      }
+      .cancelbtn {
+        background-color: $danger-color;
+      }
+    }
+  }
+}

@@ -8104,6 +8104,29 @@ a.text-white:hover, a.text-white:focus {
   justify-content: center;
   align-items: center; }
 
+.go-back {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 100; }
+  @media only screen and (max-width: 768px) {
+    .go-back {
+      top: calc(100vh - 50px) !important; } }
+  .go-back .fa-long-arrow-alt-left {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold; }
+  .go-back:hover {
+    opacity: 0.5; }
+
 hr {
   display: block;
   margin-top: 0.5em;
@@ -8478,28 +8501,6 @@ body {
   background-size: cover;
   background-position: center;
   position: relative; }
-  .login-container .go-back {
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    border: 1px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    z-index: 100; }
-    @media only screen and (max-width: 768px) {
-      .login-container .go-back {
-        top: calc(100vh - 75px) !important; } }
-    .login-container .go-back .fa-long-arrow-alt-left {
-      color: #fff;
-      font-size: 22px;
-      font-weight: bold; }
-    .login-container .go-back:hover {
-      opacity: 0.5; }
   .login-container .form-login {
     display: flex;
     width: 100%;
@@ -8534,7 +8535,8 @@ body {
       .login-container .form-login .form-log-in-with-email .form-white-background {
         position: relative;
         padding: 2rem 3rem;
-        background-color: #fff; }
+        background-color: #fff;
+        opacity: 0.95; }
         @media only screen and (max-width: 768px) {
           .login-container .form-login .form-log-in-with-email .form-white-background {
             min-height: auto; } }
