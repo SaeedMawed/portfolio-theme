@@ -8702,12 +8702,14 @@ body {
     -prefixes-animation: fadeInOut 3s infinite linear;
     animation: fadeInOut 3s infinite linear;
     border: 1px solid #fff;
-    color: #fff;
+    color: #000;
     font-weight: bold;
     padding: 0.5rem;
     min-height: 200px;
     position: relative;
-    height: auto; }
+    height: auto;
+    opacity: 1 !important;
+    background-color: white; }
     .services .service-box:hover {
       background-color: #fff;
       color: #000;
@@ -8811,9 +8813,6 @@ body {
       max-width: 100%;
       width: 100%;
       height: 300px; }
-      .amazing-works .work-box .work-img:hover {
-        -prefixes-animation: fadeInOut 3s infinite linear;
-        animation: fadeInOut 3s infinite linear; }
       @media only screen and (max-width: 768px) {
         .amazing-works .work-box .work-img {
           height: 200px; } }
